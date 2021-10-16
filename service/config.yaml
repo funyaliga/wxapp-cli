@@ -1,0 +1,13 @@
+BMAP_AK: 'HSDFSDFSDFSDFSDFSFF1442'
+development:
+  ENV: 'development'
+  APP_ID: 'wxf1a5725845d3d15f'
+  API_URL: 'https://xzsapp-dev.51xuanshi.com'
+production:
+  ENV: 'production'
+  APP_ID: 'wxf1a5725845d3d15f'
+  API_URL: 'https://xzsapp.51xuanshi.com'
+localhost:
+  ENV: 'localhost'
+  APP_ID: 'wxf1a5725845d3d15f'
+  API_URL: 'http://localhost:8888'

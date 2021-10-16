@@ -1,0 +1,51 @@
+{
+  "name": "wxapp-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development GULP_TASK=watch node service/index.js",
+    "dev": "npm run start",
+    "localhost": "cross-env NODE_ENV=localhost GULP_TASK=watch node service/index.js",
+    "build": "cross-env NODE_ENV=production GULP_TASK=build node service/index.js",
+    "clear": "gulp clear --gulpfile ./service/gulpfile.js --cwd .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/funyaliga/wxapp-cli.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/funyaliga/wxapp-cli/issues"
+  },
+  "homepage": "https://github.com/funyaliga/wxapp-cli#readme",
+  "dependencies": {
+    "dayjs": "^1.10.7",
+    "qs": "6.9.6"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-nullish-coalescing-operator": "^7.14.5",
+    "@babel/plugin-proposal-optional-chaining": "^7.14.5",
+    "cross-env": "^7.0.3",
+    "del": "^6.0.0",
+    "eslint": "^8.0.0",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-cached": "^1.1.1",
+    "gulp-clean": "^0.4.0",
+    "gulp-if": "^3.0.0",
+    "gulp-postcss": "^9.0.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.0.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-uglify": "^3.0.2",
+    "js-yaml": "^4.1.0",
+    "postcss-font-base64": "^1.0.5",
+    "postcss-px2rpx": "^0.0.4",
+    "sass": "^1.42.1",
+    "shelljs": "^0.8.4",
+    "uglify-es": "^3.3.9"
+  }
+}
